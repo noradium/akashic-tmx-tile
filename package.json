@@ -1,0 +1,33 @@
+{
+  "name": "akashic-tmx-tile",
+  "version": "0.0.1",
+  "description": "tmx を解釈し akashic-tile を利用して描画するためのライブラリ",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "noradium",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@akashic/akashic-engine": "^2.1.1",
+    "@types/node": "^9.4.7",
+    "@types/xml2js": "^0.4.2",
+    "awesome-typescript-loader": "^4.0.1",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  },
+  "dependencies": {
+    "@akashic-extension/akashic-tile": "^2.0.1",
+    "xml2js": "^0.4.19"
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"width": 1024,
+	"height": 576,
+	"fps": 30,
+	"main": "./script/main.js",
+	"assets": {
+		"main": {
+			"type": "script",
+			"path": "script/main.js",
+			"global": true
+		},
+		"map": {
+			"type": "text",
+			"path": "text/map.tmx"
+		},
+		"tile": {
+			"type": "text",
+			"path": "text/tile.tsx"
+		},
+		"tile_image": {
+			"type": "image",
+			"width": 96,
+			"height": 64,
+			"path": "image/tile_image.png"
+		}
+	},
+	"environment": {
+		"sandbox-runtime": "2"
+	},
+	"globalScripts": [
+		"node_modules/akashic-tmx-tile/lib/index.js"
+	],
+	"moduleMainScripts": {
+		"akashic-tmx-tile": "node_modules/akashic-tmx-tile/lib/index.js"
+	}
+}
