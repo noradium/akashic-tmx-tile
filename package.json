@@ -1,6 +1,6 @@
 {
   "name": "akashic-tmx-tile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "tmx を解釈し akashic-tile を利用して描画するためのライブラリ",
   "main": "lib/index.js",
   "scripts": {
