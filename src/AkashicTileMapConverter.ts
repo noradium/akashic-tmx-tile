@@ -28,7 +28,7 @@ export namespace AkashicTileMapConverter {
     const array = layer.data.map(index => index - 1);
     const data = [];
     for (let i = 0; i < layer.height; ++i) {
-      data.push(array.slice(i * layer.width, (i + 1) * layer.width - 1));
+      data.push(array.slice(i * layer.width, (i + 1) * layer.width));
     }
     return {
       data

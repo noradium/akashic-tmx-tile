@@ -4,6 +4,7 @@
   "description": "tmx を解釈し akashic-tile を利用して描画するためのライブラリ",
   "main": "lib/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "webpack",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

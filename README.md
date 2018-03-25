@@ -13,9 +13,9 @@
 import {TMXTile} from 'akashic-tmx-tile';
 
 function main(param: g.GameMainParameterObject): void {
-	const scene = new g.Scene({game: g.game, assetIds: ['tile_image', 'tile', 'map']});
+  const scene = new g.Scene({game: g.game, assetIds: ['tile_image', 'tile', 'map']});
 
-	scene.loaded.add(() => {
+  scene.loaded.add(() => {
     const tmxTile = new TMXTile({scene}, {
       asset: {
         tilesetImage: <g.ImageAsset>scene.assets['tile_image'],
@@ -27,7 +27,7 @@ function main(param: g.GameMainParameterObject): void {
     tmxTile.load(); // load map async
   });
 
-	g.game.pushScene(scene);
+  g.game.pushScene(scene);
 }
 
 export = main;
